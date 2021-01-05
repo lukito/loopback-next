@@ -241,6 +241,10 @@ describe('lb4 relation', /** @this {Mocha.Suite} */ function () {
         relationType: 'hasMany',
         sourceModel: 'Customer',
         destinationModel: 'Order',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       };
 
       await testUtils
@@ -270,6 +274,10 @@ describe('lb4 relation', /** @this {Mocha.Suite} */ function () {
         relationType: 'belongsTo',
         sourceModel: 'Order',
         destinationModel: 'Customer',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       };
 
       await testUtils

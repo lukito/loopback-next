@@ -59,6 +59,10 @@ describe('lb4 relation HasOne', /** @this {Mocha.Suite} */ function () {
       relationType: 'hasOne',
       sourceModel: 'Customer',
       destinationModel: 'Address',
+      sourceModelPrimaryKey: 'id',
+      sourceModelPrimaryKeyType: 'number',
+      destinationModelPrimaryKey: 'id',
+      destinationModelPrimaryKeyType: 'number',
     };
 
     return expect(
@@ -89,6 +93,10 @@ describe('lb4 relation HasOne', /** @this {Mocha.Suite} */ function () {
         sourceModel: 'Address',
         destinationModel: 'Customer',
         relationName: 'myCustomer',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       };
 
       return expect(
@@ -159,6 +167,10 @@ describe('lb4 relation HasOne', /** @this {Mocha.Suite} */ function () {
         sourceModel: 'Customer',
         destinationModel: 'Address',
         relationName: 'myAddress',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 
@@ -208,6 +220,10 @@ describe('lb4 relation HasOne', /** @this {Mocha.Suite} */ function () {
         sourceModel: 'Customer',
         destinationModel: 'Address',
         foreignKeyName: 'mykey',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 
@@ -256,12 +272,20 @@ describe('lb4 relation HasOne', /** @this {Mocha.Suite} */ function () {
         relationType: 'hasOne',
         sourceModel: 'Customer',
         destinationModel: 'Address',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
       {
         relationType: 'hasOne',
         sourceModel: 'Customer',
         destinationModel: 'Address',
         relationName: 'myAddress',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 
@@ -310,12 +334,20 @@ describe('lb4 relation HasOne', /** @this {Mocha.Suite} */ function () {
         relationType: 'hasOne',
         sourceModel: 'Customer',
         destinationModel: 'Address',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
       {
         relationType: 'hasOne',
         sourceModel: 'Customer',
         destinationModel: 'Address',
         registerInclusionResolver: false,
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 

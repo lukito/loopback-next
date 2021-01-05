@@ -97,6 +97,10 @@ describe('lb4 relation HasManyThrough', /** @this {Mocha.Suite} */ function () {
         destinationModel: 'Patient',
         throughModel: 'Appointment',
         relationName: 'myPatients',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 
@@ -147,6 +151,10 @@ describe('lb4 relation HasManyThrough', /** @this {Mocha.Suite} */ function () {
         destinationModel: 'Patient',
         throughModel: 'Appointment',
         sourceKeyOnThrough: 'customKeyFrom',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
       {
         relationType: 'hasManyThrough',
@@ -154,6 +162,10 @@ describe('lb4 relation HasManyThrough', /** @this {Mocha.Suite} */ function () {
         destinationModel: 'Patient',
         throughModel: 'Appointment',
         targetKeyOnThrough: 'customKeyTo',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
       {
         relationType: 'hasManyThrough',
@@ -162,6 +174,10 @@ describe('lb4 relation HasManyThrough', /** @this {Mocha.Suite} */ function () {
         throughModel: 'Appointment',
         sourceKeyOnThrough: 'customKeyFrom',
         targetKeyOnThrough: 'customKeyTo',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 
@@ -211,6 +227,10 @@ describe('lb4 relation HasManyThrough', /** @this {Mocha.Suite} */ function () {
         sourceModel: 'Doctor',
         destinationModel: 'Patient',
         throughModel: 'Appointment',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
       {
         relationType: 'hasManyThrough',
@@ -218,6 +238,10 @@ describe('lb4 relation HasManyThrough', /** @this {Mocha.Suite} */ function () {
         destinationModel: 'Patient',
         throughModel: 'Appointment',
         relationName: 'myPatients',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 
@@ -259,6 +283,10 @@ describe('lb4 relation HasManyThrough', /** @this {Mocha.Suite} */ function () {
         sourceModel: 'Doctor',
         destinationModel: 'Patient',
         throughModel: 'Appointment',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
       {
         relationType: 'hasManyThrough',
@@ -266,6 +294,10 @@ describe('lb4 relation HasManyThrough', /** @this {Mocha.Suite} */ function () {
         destinationModel: 'Patient',
         throughModel: 'Appointment',
         registerInclusionResolver: false,
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 

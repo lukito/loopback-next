@@ -59,6 +59,10 @@ describe('lb4 relation HasMany', /** @this {Mocha.Suite} */ function () {
       relationType: 'hasMany',
       sourceModel: 'Customer',
       destinationModel: 'Order',
+      sourceModelPrimaryKey: 'id',
+      sourceModelPrimaryKeyType: 'number',
+      destinationModelPrimaryKey: 'id',
+      destinationModelPrimaryKeyType: 'number',
     };
 
     return expect(
@@ -89,6 +93,10 @@ describe('lb4 relation HasMany', /** @this {Mocha.Suite} */ function () {
         sourceModel: 'Order',
         destinationModel: 'Customer',
         relationName: 'myCustomer',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       };
 
       return expect(
@@ -159,6 +167,10 @@ describe('lb4 relation HasMany', /** @this {Mocha.Suite} */ function () {
         sourceModel: 'Customer',
         destinationModel: 'Order',
         relationName: 'myOrders',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 
@@ -208,6 +220,10 @@ describe('lb4 relation HasMany', /** @this {Mocha.Suite} */ function () {
         sourceModel: 'Customer',
         destinationModel: 'Order',
         foreignKeyName: 'mykey',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 
@@ -256,12 +272,20 @@ describe('lb4 relation HasMany', /** @this {Mocha.Suite} */ function () {
         relationType: 'hasMany',
         sourceModel: 'Customer',
         destinationModel: 'Order',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
       {
         relationType: 'hasMany',
         sourceModel: 'Customer',
         destinationModel: 'Order',
         relationName: 'myOrders',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 
@@ -302,6 +326,10 @@ describe('lb4 relation HasMany', /** @this {Mocha.Suite} */ function () {
         relationType: 'hasMany',
         sourceModel: 'Customer',
         destinationModel: 'Order',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
       {
         relationType: 'hasMany',
@@ -309,6 +337,10 @@ describe('lb4 relation HasMany', /** @this {Mocha.Suite} */ function () {
         destinationModel: 'Order',
         relationName: 'custom_name',
         registerInclusionResolver: false,
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 

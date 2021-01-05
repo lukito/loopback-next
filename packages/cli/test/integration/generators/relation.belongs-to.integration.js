@@ -98,6 +98,10 @@ describe('lb4 relation', /** @this {Mocha.Suite} */ function () {
         destinationModel: 'Customer',
         foreignKeyName: 'customerId',
         relationName: 'customer',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 
@@ -137,6 +141,10 @@ describe('lb4 relation', /** @this {Mocha.Suite} */ function () {
         destinationModel: 'Customer',
         foreignKeyName: 'customerId',
         relationName: 'my_customer',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
     promptArray.forEach(function (multiItemPrompt, i) {
@@ -177,12 +185,20 @@ describe('lb4 relation', /** @this {Mocha.Suite} */ function () {
         relationType: 'belongsTo',
         sourceModel: 'Order',
         destinationModel: 'Customer',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
       {
         relationType: 'belongsTo',
         sourceModel: 'Order',
         destinationModel: 'Customer',
         relationName: 'my_customer',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 
@@ -233,6 +249,10 @@ describe('lb4 relation', /** @this {Mocha.Suite} */ function () {
         relationType: 'belongsTo',
         sourceModel: 'Order',
         destinationModel: 'Customer',
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
       {
         relationType: 'belongsTo',
@@ -240,6 +260,10 @@ describe('lb4 relation', /** @this {Mocha.Suite} */ function () {
         destinationModel: 'Customer',
         relationName: 'custom_name',
         registerInclusionResolver: false,
+        sourceModelPrimaryKey: 'id',
+        sourceModelPrimaryKeyType: 'number',
+        destinationModelPrimaryKey: 'id',
+        destinationModelPrimaryKeyType: 'number',
       },
     ];
 

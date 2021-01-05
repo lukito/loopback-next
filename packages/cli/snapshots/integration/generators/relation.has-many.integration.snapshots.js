@@ -7,7 +7,7 @@
 
 'use strict';
 
-exports[`lb4 relation HasMany checks generated source class repository answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","relationName":"custom_name","registerInclusionResolver":false} generates Customer repository file with different inputs 1`] = `
+exports[`lb4 relation HasMany checks generated source class repository answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","relationName":"custom_name","registerInclusionResolver":false,"sourceModelPrimaryKey":"id","sourceModelPrimaryKeyType":"number","destinationModelPrimaryKey":"id","destinationModelPrimaryKeyType":"number"} generates Customer repository file with different inputs 1`] = `
 import {inject, Getter} from '@loopback/core';
 import {DefaultCrudRepository, repository, HasManyRepositoryFactory} from '@loopback/repository';
 import {DbDataSource} from '../datasources';
@@ -30,7 +30,7 @@ export class CustomerRepository extends DefaultCrudRepository<
 `;
 
 
-exports[`lb4 relation HasMany checks generated source class repository answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order"} generates Customer repository file with different inputs 1`] = `
+exports[`lb4 relation HasMany checks generated source class repository answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","sourceModelPrimaryKey":"id","sourceModelPrimaryKeyType":"number","destinationModelPrimaryKey":"id","destinationModelPrimaryKeyType":"number"} generates Customer repository file with different inputs 1`] = `
 import {inject, Getter} from '@loopback/core';
 import {DefaultCrudRepository, repository, HasManyRepositoryFactory} from '@loopback/repository';
 import {DbDataSource} from '../datasources';
@@ -54,7 +54,7 @@ export class CustomerRepository extends DefaultCrudRepository<
 `;
 
 
-exports[`lb4 relation HasMany checks if the controller file created  answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","relationName":"myOrders"} checks controller content with hasMany relation 1`] = `
+exports[`lb4 relation HasMany checks if the controller file created  answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","relationName":"myOrders","sourceModelPrimaryKey":"id","sourceModelPrimaryKeyType":"number","destinationModelPrimaryKey":"id","destinationModelPrimaryKeyType":"number"} checks controller content with hasMany relation 1`] = `
 import {
   Count,
   CountSchema,
@@ -169,7 +169,7 @@ export class CustomerOrderController {
 `;
 
 
-exports[`lb4 relation HasMany checks if the controller file created  answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order"} checks controller content with hasMany relation 1`] = `
+exports[`lb4 relation HasMany checks if the controller file created  answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","sourceModelPrimaryKey":"id","sourceModelPrimaryKeyType":"number","destinationModelPrimaryKey":"id","destinationModelPrimaryKeyType":"number"} checks controller content with hasMany relation 1`] = `
 import {
   Count,
   CountSchema,
@@ -284,7 +284,7 @@ export class CustomerOrderController {
 `;
 
 
-exports[`lb4 relation HasMany generates model relation with custom foreignKey answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","foreignKeyName":"mykey"} add the keyTo to the source model 1`] = `
+exports[`lb4 relation HasMany generates model relation with custom foreignKey answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","foreignKeyName":"mykey","sourceModelPrimaryKey":"id","sourceModelPrimaryKeyType":"number","destinationModelPrimaryKey":"id","destinationModelPrimaryKeyType":"number"} add the keyTo to the source model 1`] = `
 import {Entity, model, property, hasMany} from '@loopback/repository';
 import {Order} from './order.model';
 
@@ -313,7 +313,7 @@ export class Customer extends Entity {
 `;
 
 
-exports[`lb4 relation HasMany generates model relation with custom foreignKey answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","foreignKeyName":"mykey"} add the keyTo to the source model 2`] = `
+exports[`lb4 relation HasMany generates model relation with custom foreignKey answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","foreignKeyName":"mykey","sourceModelPrimaryKey":"id","sourceModelPrimaryKeyType":"number","destinationModelPrimaryKey":"id","destinationModelPrimaryKeyType":"number"} add the keyTo to the source model 2`] = `
 import {Entity, model, property} from '@loopback/repository';
 
 @model()
@@ -343,7 +343,7 @@ export class Order extends Entity {
 `;
 
 
-exports[`lb4 relation HasMany generates model relation with custom relation name answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","relationName":"myOrders"} relation name should be myOrders 1`] = `
+exports[`lb4 relation HasMany generates model relation with custom relation name answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","relationName":"myOrders","sourceModelPrimaryKey":"id","sourceModelPrimaryKeyType":"number","destinationModelPrimaryKey":"id","destinationModelPrimaryKeyType":"number"} relation name should be myOrders 1`] = `
 import {Entity, model, property, hasMany} from '@loopback/repository';
 import {Order} from './order.model';
 
@@ -372,7 +372,7 @@ export class Customer extends Entity {
 `;
 
 
-exports[`lb4 relation HasMany generates model relation with custom relation name answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","relationName":"myOrders"} relation name should be myOrders 2`] = `
+exports[`lb4 relation HasMany generates model relation with custom relation name answers {"relationType":"hasMany","sourceModel":"Customer","destinationModel":"Order","relationName":"myOrders","sourceModelPrimaryKey":"id","sourceModelPrimaryKeyType":"number","destinationModelPrimaryKey":"id","destinationModelPrimaryKeyType":"number"} relation name should be myOrders 2`] = `
 import {Entity, model, property} from '@loopback/repository';
 
 @model()
